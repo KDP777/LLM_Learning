@@ -173,11 +173,11 @@ Jupyter 是一个python的IDE工具，可实时运行，开启也很快，并且
         > bf16: true
         > ddp_timeout: 180000000
 
-4. LLaMa Factory 运行微调脚本
+    * LLaMa Factory 运行微调脚本
 
-   > cd path_to_LLaMA Factory
-   >
-   > FORCE_TORCHRUN=1 NNODES=1 NODE_RANK=0 MASTER_PORT=29501 llamafactory-cli train examples/train_full/qwen2_full_sft.yaml
+     > cd path_to_LLaMA Factory
+     >
+     > FORCE_TORCHRUN=1 NNODES=1 NODE_RANK=0 MASTER_PORT=29501 llamafactory-cli train examples/train_full/qwen2_full_sft.yaml
 
 ​	本机性能过弱，无法运行大模型的training 过程，只能把教程中的结果贴上来供大家参考:
 
